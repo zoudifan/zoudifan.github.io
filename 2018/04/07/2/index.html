@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="github，SSHkey," />
 
 
 
@@ -79,17 +79,25 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="1，准备工作首先你的有一个github账号，作为程序猿我默认你是有的；其次你的电脑上面需要安装git，此工具我也默认你电脑上面是有的。 2，配置你本地机的SSH key 打开git bash，输入如下命令ls -al ~/.ssh此时界面上应该有你之前添加过的SHH key，如果界面什么都没有说明你没添加过SSH key，如果存在SSH key，全部删除就行了，因为我们需要新建一个SSH key。">
+<meta name="keywords" content="github，SSHkey">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://xiazhuomo.com/2018/04/07/hello-world/index.html">
+<meta property="og:title" content="给自己的github仓库配置ssh key">
+<meta property="og:url" content="http://xiazhuomo.com/2018/04/07/2/index.html">
 <meta property="og:site_name" content="瞎琢磨">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="1，准备工作首先你的有一个github账号，作为程序猿我默认你是有的；其次你的电脑上面需要安装git，此工具我也默认你电脑上面是有的。 2，配置你本地机的SSH key 打开git bash，输入如下命令ls -al ~/.ssh此时界面上应该有你之前添加过的SHH key，如果界面什么都没有说明你没添加过SSH key，如果存在SSH key，全部删除就行了，因为我们需要新建一个SSH key。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-03T09:27:02.773Z">
+<meta property="og:image" content="http://图1">
+<meta property="og:image" content="http://图2">
+<meta property="og:image" content="http://图11">
+<meta property="og:image" content="http://图12">
+<meta property="og:image" content="http://xiazhuomo.com/2018/04/07/2/index.html">
+<meta property="og:image" content="http://19">
+<meta property="og:updated_time" content="2018-04-06T18:13:36.347Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="给自己的github仓库配置ssh key">
+<meta name="twitter:description" content="1，准备工作首先你的有一个github账号，作为程序猿我默认你是有的；其次你的电脑上面需要安装git，此工具我也默认你电脑上面是有的。 2，配置你本地机的SSH key 打开git bash，输入如下命令ls -al ~/.ssh此时界面上应该有你之前添加过的SHH key，如果界面什么都没有说明你没添加过SSH key，如果存在SSH key，全部删除就行了，因为我们需要新建一个SSH key。">
+<meta name="twitter:image" content="http://图1">
 
 
 
@@ -119,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://xiazhuomo.com/2018/04/07/hello-world/"/>
+  <link rel="canonical" href="http://xiazhuomo.com/2018/04/07/2/"/>
 
 
 
 
 
-  <title>Hello World | 瞎琢磨</title>
+  <title>给自己的github仓库配置ssh key | 瞎琢磨</title>
   
 
 
@@ -262,7 +270,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://xiazhuomo.com/2018/04/07/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://xiazhuomo.com/2018/04/07/2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="瞎琢磨">
@@ -279,7 +287,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">给自己的github仓库配置ssh key</h1>
         
 
         <div class="post-meta">
@@ -291,7 +299,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-07T00:00:00+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-07T00:23:31+08:00">
                 2018-04-07
               </time>
             
@@ -301,28 +309,6 @@
             
           </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/闲话/" itemprop="url" rel="index">
-                    <span itemprop="name">闲话</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -351,15 +337,20 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h2 id="1，准备工作"><a href="#1，准备工作" class="headerlink" title="1，准备工作"></a>1，准备工作</h2><p>首先你的有一个github账号，作为程序猿我默认你是有的；其次你的电脑上面需要安装git，此工具我也默认你电脑上面是有的。</p>
+<h2 id="2，配置你本地机的SSH-key"><a href="#2，配置你本地机的SSH-key" class="headerlink" title="2，配置你本地机的SSH key"></a>2，配置你本地机的SSH key</h2><ul>
+<li>打开git bash，输入如下命令<code>ls -al ~/.ssh</code>此时界面上应该有你之前添加过的SHH key，如果界面什么都没有说明你没添加过SSH key，如果存在SSH key，全部删除就行了，因为我们需要新建一个SSH key。<br><img src="http://图1" alt=""><br><img src="http://图2" alt=""></li>
+<li>在git bash里面输入<code>ssh-keygen -t rsa -C &quot;你的github账号&quot;</code>命令，引号填写你自己的github账号。<br><code>Generating public/private rsa key pair.</code><br><code>Enter file in which to save the key (/c/Users/Administrator/.ssh/id_rsa):</code>直接回车<br><code>Enter passphrase (empty for no passphrase):</code>设定一个密码，也可以不设定直接回车<br><code>Enter same passphrase again:</code>在此输入密码，然后回车<br>==<strong><em>注意：此处你的github如果用于部署hexo博客系统的话，请不要设置密码，因为hexo自动部署如果遇到密码的话会导致部署失败。</em></strong>==</li>
+<li>在git bash里面输入<code>ssh-agent -s</code></li>
+<li>在git bash里面输入<code>ssh-add ~/.ssh/id_rsa</code><br>==<strong><em>注意：这一步如果出现错误，就先输入<code>eval &#39;ssh-agent -s&#39;</code>再输入<code>ssh-add</code>就可以了。</em></strong>==</li>
+<li>将自己的SSH  key复制到github里面去，先在git bash里面输入<code>clip &lt; ~/.ssh/id_rsa.pub</code>就将SSH key复制到剪切板上面了。<h2 id="3，下面就登陆你的github，将SSH-key粘贴到里面去。"><a href="#3，下面就登陆你的github，将SSH-key粘贴到里面去。" class="headerlink" title="3，下面就登陆你的github，将SSH key粘贴到里面去。"></a>3，下面就登陆你的github，将SSH key粘贴到里面去。</h2></li>
+<li>进入github的设置<br><img src="http://图11" alt=""></li>
+<li>选择<code>SSH and GPG keys</code>选项<br><img src="http://图12" alt=""></li>
+<li>选择<code>New SSH key</code>按钮</li>
+<li><code>Title</code>里面随便填，自己取名字就行了</li>
+<li><code>key</code>里面粘贴自己刚才复制下来的本地SSH key<br><img src="http://" alt=""><br>即可完成SSH key的添加。<br>##4，测试SSH key是否添加成功</li>
+<li>在git bash里面输入<code>ssh -T git@github.com</code>，如果出现如下提示，说明你已经安装成功了，SSH key可以正常连接了。<br><img src="http://19" alt=""><h2 id="5，大功告成"><a href="#5，大功告成" class="headerlink" title="5，大功告成"></a>5，大功告成</h2></li>
+</ul>
 
       
     </div>
@@ -375,6 +366,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/github，SSHkey/" rel="tag"># github，SSHkey</a>
+          
+        </div>
+      
 
       
       
@@ -384,15 +381,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/04/07/1/" rel="next" title="给自己的github仓库配置ssh key">
+                <i class="fa fa-chevron-left"></i> 给自己的github仓库配置ssh key
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/04/07/biaoti/" rel="prev" title="给自己的github仓库配置ssh key">
-                给自己的github仓库配置ssh key <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -524,7 +521,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1，准备工作"><span class="nav-number">1.</span> <span class="nav-text">1，准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2，配置你本地机的SSH-key"><span class="nav-number">2.</span> <span class="nav-text">2，配置你本地机的SSH key</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3，下面就登陆你的github，将SSH-key粘贴到里面去。"><span class="nav-number">3.</span> <span class="nav-text">3，下面就登陆你的github，将SSH key粘贴到里面去。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5，大功告成"><span class="nav-number">4.</span> <span class="nav-text">5，大功告成</span></a></li></ol></div>
             
 
           </div>
