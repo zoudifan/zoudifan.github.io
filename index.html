@@ -513,7 +513,8 @@
       
         
           
-            <h2 id="1，准备工作"><a href="#1，准备工作" class="headerlink" title="1，准备工作"></a>1，准备工作</h2><p>首先你的有一个github账号，作为程序猿我默认你是有的；其次你的电脑上面需要安装git，此工具我也默认你电脑上面是有的。</p>
+            <p>SSH通道具有良好的加密型，是能有效防止被劫持。因此在自己的github上设置SSH通道是非常有必要的。</p>
+<h2 id="1，准备工作"><a href="#1，准备工作" class="headerlink" title="1，准备工作"></a>1，准备工作</h2><p>首先你的有一个github账号，作为程序猿我默认你是有的；其次你的电脑上面需要安装git，此工具我也默认你电脑上面是有的。</p>
 <h2 id="2，配置你本地机的SSH-key"><a href="#2，配置你本地机的SSH-key" class="headerlink" title="2，配置你本地机的SSH key"></a>2，配置你本地机的SSH key</h2><ul>
 <li>打开git bash，输入如下命令<code>ls -al ~/.ssh</code>此时界面上应该有你之前添加过的SHH key，如果界面什么都没有说明你没添加过SSH key，如果存在SSH key，全部删除就行了，因为我们需要新建一个SSH key。<br><img src="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE1.JPG" alt=""><br><img src="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE2.JPG" alt=""></li>
 <li>在git bash里面输入<code>ssh-keygen -t rsa -C &quot;你的github账号&quot;</code>命令，引号填写你自己的github账号。<br><img src="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE3.JPG" alt=""><br><code>Generating public/private rsa key pair.</code><br><code>Enter file in which to save the key (/c/Users/Administrator/.ssh/id_rsa):</code>直接回车<br><img src="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE4.JPG" alt=""><br><code>Enter passphrase (empty for no passphrase):</code>设定一个密码，也可以不设定直接回车<br><img src="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE5.JPG" alt=""><br><code>Enter same passphrase again:</code>在此输入密码，然后回车<br><img src="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE6.JPG" alt=""><br>==<strong><em>注意：此处你的github如果用于部署hexo博客系统的话，请不要设置密码，因为hexo自动部署如果遇到密码的话会导致部署失败。</em></strong>==</li>
