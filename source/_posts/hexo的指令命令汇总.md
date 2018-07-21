@@ -1,7 +1,7 @@
 ---
 title: hexo的指令命令汇总
 date: 2018-07-21 11:12:15
-tags:  hexo命令
+tags: [hexo命令,hexo使用,hexo指令,hexo教程]
 categories: hexo使用
 
 ---
