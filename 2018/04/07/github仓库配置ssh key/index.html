@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="python学习, hexo, github应用, 编程, 自媒体" />
+  <meta name="keywords" content="github,SSH key,hexo配置," />
 
 
 
@@ -79,16 +79,36 @@
 
 
 
-<meta name="description" content="琢磨身边的一些事情">
-<meta property="og:type" content="website">
-<meta property="og:title" content="瞎琢磨">
-<meta property="og:url" content="http://xiazhuomo.com/index.html">
+<meta name="description" content="SSH通道具有良好的加密型，是能有效防止被劫持。因此在自己的github上设置SSH通道是非常有必要的。">
+<meta name="keywords" content="github,SSH key,hexo配置">
+<meta property="og:type" content="article">
+<meta property="og:title" content="给自己的github仓库配置ssh key">
+<meta property="og:url" content="http://xiazhuomo.com/2018/04/07/github仓库配置ssh key/index.html">
 <meta property="og:site_name" content="瞎琢磨">
-<meta property="og:description" content="琢磨身边的一些事情">
+<meta property="og:description" content="SSH通道具有良好的加密型，是能有效防止被劫持。因此在自己的github上设置SSH通道是非常有必要的。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE1.JPG">
+<meta property="og:image" content="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE2.JPG">
+<meta property="og:image" content="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE3.JPG">
+<meta property="og:image" content="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE4.JPG">
+<meta property="og:image" content="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE5.JPG">
+<meta property="og:image" content="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE6.JPG">
+<meta property="og:image" content="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE7.JPG">
+<meta property="og:image" content="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE9.JPG">
+<meta property="og:image" content="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE10.JPG">
+<meta property="og:image" content="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE11.JPG">
+<meta property="og:image" content="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE12.JPG">
+<meta property="og:image" content="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE13.JPG">
+<meta property="og:image" content="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE14.JPG">
+<meta property="og:image" content="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE15.JPG">
+<meta property="og:image" content="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE16.JPG">
+<meta property="og:image" content="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE18.JPG">
+<meta property="og:image" content="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE19.JPG">
+<meta property="og:updated_time" content="2018-07-20T16:30:55.712Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="瞎琢磨">
-<meta name="twitter:description" content="琢磨身边的一些事情">
+<meta name="twitter:title" content="给自己的github仓库配置ssh key">
+<meta name="twitter:description" content="SSH通道具有良好的加密型，是能有效防止被劫持。因此在自己的github上设置SSH通道是非常有必要的。">
+<meta name="twitter:image" content="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE1.JPG">
 
 
 
@@ -118,13 +138,13 @@
 
 
 
-  <link rel="canonical" href="http://xiazhuomo.com/"/>
+  <link rel="canonical" href="http://xiazhuomo.com/2018/04/07/github仓库配置ssh key/"/>
 
 
 
 
 
-  <title>瞎琢磨</title>
+  <title>给自己的github仓库配置ssh key | 瞎琢磨</title>
   
 
 
@@ -143,8 +163,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -247,155 +266,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://xiazhuomo.com/2018/07/21/hexo的指令命令汇总/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="瞎琢磨">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="瞎琢磨">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/07/21/hexo的指令命令汇总/" itemprop="url">hexo的指令命令汇总</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-21T11:12:15+08:00">
-                2018-07-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/hexo使用/" itemprop="url" rel="index">
-                    <span itemprop="name">hexo使用</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>hexo的常用指令和命令汇总</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/07/21/hexo的指令命令汇总/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -425,9 +298,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/07/github仓库配置ssh key/" itemprop="url">给自己的github仓库配置ssh key</a></h1>
+          <h1 class="post-title" itemprop="name headline">给自己的github仓库配置ssh key</h1>
         
 
         <div class="post-meta">
@@ -499,16 +370,23 @@
       
 
       
-        
-          <p>SSH通道具有良好的加密型，是能有效防止被劫持。因此在自己的github上设置SSH通道是非常有必要的。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/04/07/github仓库配置ssh key/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <p>SSH通道具有良好的加密型，是能有效防止被劫持。因此在自己的github上设置SSH通道是非常有必要的。</p>
+<a id="more"></a>
+<h2 id="1，准备工作"><a href="#1，准备工作" class="headerlink" title="1，准备工作"></a>1，准备工作</h2><p>首先你的有一个github账号，作为程序猿我默认你是有的；其次你的电脑上面需要安装git，此工具我也默认你电脑上面是有的。</p>
+<h2 id="2，配置你本地机的SSH-key"><a href="#2，配置你本地机的SSH-key" class="headerlink" title="2，配置你本地机的SSH key"></a>2，配置你本地机的SSH key</h2><ul>
+<li>打开git bash，输入如下命令<code>ls -al ~/.ssh</code>此时界面上应该有你之前添加过的SHH key，如果界面什么都没有说明你没添加过SSH key，如果存在SSH key，全部删除就行了，因为我们需要新建一个SSH key。<br><img src="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE1.JPG" alt=""><br><img src="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE2.JPG" alt=""></li>
+<li>在git bash里面输入<code>ssh-keygen -t rsa -C &quot;你的github账号&quot;</code>命令，引号填写你自己的github账号。<br><img src="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE3.JPG" alt=""><br><code>Generating public/private rsa key pair.</code><br><code>Enter file in which to save the key (/c/Users/Administrator/.ssh/id_rsa):</code>直接回车<br><img src="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE4.JPG" alt=""><br><code>Enter passphrase (empty for no passphrase):</code>设定一个密码，也可以不设定直接回车<br><img src="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE5.JPG" alt=""><br><code>Enter same passphrase again:</code>在此输入密码，然后回车<br><img src="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE6.JPG" alt=""><br>==<strong><em>注意：此处你的github如果用于部署hexo博客系统的话，请不要设置密码，因为hexo自动部署如果遇到密码的话会导致部署失败。</em></strong>==</li>
+<li>在git bash里面输入<code>ssh-agent -s</code><br><img src="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE7.JPG" alt=""></li>
+<li>在git bash里面输入<code>ssh-add ~/.ssh/id_rsa</code><br><img src="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE9.JPG" alt=""><br><img src="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE10.JPG" alt=""><br>==<strong><em>注意：这一步如果出现错误，就先输入<code>eval &#39;ssh-agent -s&#39;</code>再输入<code>ssh-add</code>就可以了。</em></strong>==</li>
+<li>将自己的SSH  key复制到github里面去，先在git bash里面输入<code>clip &lt; ~/.ssh/id_rsa.pub</code>就将SSH key复制到剪切板上面了。<h2 id="3，下面就登陆你的github，将SSH-key粘贴到里面去。"><a href="#3，下面就登陆你的github，将SSH-key粘贴到里面去。" class="headerlink" title="3，下面就登陆你的github，将SSH key粘贴到里面去。"></a>3，下面就登陆你的github，将SSH key粘贴到里面去。</h2></li>
+<li>进入github的设置<br><img src="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE11.JPG" alt=""></li>
+<li>选择<code>SSH and GPG keys</code>选项<br><img src="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE12.JPG" alt=""></li>
+<li>选择<code>New SSH key</code>按钮<br><img src="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE13.JPG" alt=""></li>
+<li><code>Title</code>里面随便填，自己取名字就行了</li>
+<li><code>key</code>里面粘贴自己刚才复制下来的本地SSH key<br><img src="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE14.JPG" alt=""><br>即可完成SSH key的添加。<br><img src="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE15.JPG" alt=""><br>##4，测试SSH key是否添加成功</li>
+<li>在git bash里面输入<code>ssh -T git@github.com</code>，如果出现如下提示，说明你已经安装成功了，SSH key可以正常连接了。<br><img src="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE16.JPG" alt=""><br><img src="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE18.JPG" alt=""><h2 id="5，大功告成"><a href="#5，大功告成" class="headerlink" title="5，大功告成"></a>5，大功告成</h2><img src="http://ox7cbl2vn.bkt.clouddn.com/%E5%9B%BE19.JPG" alt=""></li>
+</ul>
+
       
     </div>
     
@@ -518,165 +396,78 @@
     
 
     
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="http://ox7cbl2vn.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1.jpg" alt="瞎琢磨 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="http://ox7cbl2vn.bkt.clouddn.com/%E6%94%AF%E4%BB%98%E5%AE%9D.jpg" alt="瞎琢磨 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
 
     
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://xiazhuomo.com/2017/09/23/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="瞎琢磨">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="瞎琢磨">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/09/23/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-23T00:23:31+08:00">
-                2017-09-23
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/闲话/" itemprop="url" rel="index">
-                    <span itemprop="name">闲话</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/github/" rel="tag"># github</a>
           
-
+            <a href="/tags/SSH-key/" rel="tag"># SSH key</a>
           
-            
+            <a href="/tags/hexo配置/" rel="tag"># hexo配置</a>
           
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/09/23/hello-world/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/09/23/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/07/21/hexo的指令命令汇总/" rel="prev" title="hexo的指令命令汇总">
+                hexo的指令命令汇总 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -686,10 +477,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -697,6 +489,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -717,8 +513,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -778,6 +583,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1，准备工作"><span class="nav-number">1.</span> <span class="nav-text">1，准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2，配置你本地机的SSH-key"><span class="nav-number">2.</span> <span class="nav-text">2，配置你本地机的SSH key</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3，下面就登陆你的github，将SSH-key粘贴到里面去。"><span class="nav-number">3.</span> <span class="nav-text">3，下面就登陆你的github，将SSH key粘贴到里面去。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5，大功告成"><span class="nav-number">4.</span> <span class="nav-text">5，大功告成</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -911,6 +732,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
